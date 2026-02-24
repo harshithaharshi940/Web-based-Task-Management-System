@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6f9;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #0b0f4a;
+  color: white;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand img { height: 34px; }
+
+.navbar a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.navbar a.active {
+  border-bottom: 2px solid white;
+}
+
+/* CONTENT */
+.container {
+  padding: 25px 40px;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.actions {
+  margin-bottom: 20px;
+}
+
+.actions button {
+  padding: 8px 16px;
+  background: #0b0f4a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* TASK CARD */
+.task-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 6px solid #0b0f4a;
+}
+
+.task-card h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.task-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  font-size: 14px;
+}
+
+.task-details div {
+  background: #f8f9fb;
+  padding: 8px 10px;
+  border-radius: 4px;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.Pending { color: #7f8c8d; }
+.In Progress { color: #007bff; }
+.Completed { color: #27ae60; }

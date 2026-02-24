@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Task Reports | Aakruthi 3D</title>
+  <link rel="stylesheet" href="css/report.css" />
+
+  <!-- PDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="brand">
+    <img src="assets/logo.png" />
+    <span>Aakruthi 3D Pvt Ltd</span>
+  </div>
+  <nav>
+   <div class="navbar" id="navbar">
+  <a href="dashboard.html">Dashboard</a>
+  <a href="assign-task.html" id="nav-assign">Assign Task</a>
+  <a href="gantt.html">Gantt</a>
+  <a href="reports.html">Reports</a>
+  <a href="notification.html" style="position:relative;">
+  🔔
+  <span id="notifCount"
+        style="
+          background:red;
+          color:white;
+          font-size:11px;
+          padding:2px 6px;
+          border-radius:50%;
+          position:absolute;
+          top:-5px;
+          right:-10px;
+          display:none;">
+  </span>
+</a>
+  <a href="#" onclick="logout()">Logout</a>
+</div>
+  </nav>
+</header>
+
+<main class="container">
+
+  <h2>Individual Task Reports</h2>
+  <p class="subtitle">
+    Detailed report of each task with assignment and progress information.
+  </p>
+
+  <div class="actions">
+    <button onclick="exportPDF()">Export PDF</button>
+  </div>
+
+  <div id="taskReports"></div>
+
+</main>
+
+<script src="js/report.js"></script>
+<script src="./js/notificationWatcher.js"></script>
+</body>
+</html>

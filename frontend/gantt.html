@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gantt Chart | Aakruthi 3D</title>
+  <link rel="stylesheet" href="css/gantt.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="brand">
+    <img src="assets/logo.png" />
+    <span>Aakruthi 3D Pvt Ltd</span>
+  </div>
+  <nav>
+      <div class="navbar" id="navbar">
+  <a href="dashboard.html">Dashboard</a>
+  <a href="assign-task.html" id="nav-assign">Assign Task</a>
+  <a href="gantt.html">Gantt</a>
+  <a href="reports.html">Reports</a>
+  <a href="notification.html" style="position:relative;">
+  🔔
+  <span id="notifCount"
+        style="
+          background:red;
+          color:white;
+          font-size:11px;
+          padding:2px 6px;
+          border-radius:50%;
+          position:absolute;
+          top:-5px;
+          right:-10px;
+          display:none;">
+  </span>
+</a>
+  <a href="#" onclick="logout()">Logout</a>
+</div>
+</nav>
+</header>
+
+<main class="container">
+
+  <h2>Project Gantt Overview</h2>
+  <p class="subtitle">
+    Visual progress tracking of all assigned tasks based on deadline and status.
+  </p>
+
+  <!-- SUMMARY CARDS -->
+  <div class="summary-cards">
+    <div class="summary-card pending">
+      <h3 id="pendingCount">0</h3>
+      <p>Pending Tasks</p>
+    </div>
+    <div class="summary-card progress">
+      <h3 id="progressCount">0</h3>
+      <p>In Progress</p>
+    </div>
+    <div class="summary-card completed">
+      <h3 id="completedCount">0</h3>
+      <p>Completed</p>
+    </div>
+  </div>
+
+  <!-- TASK TABLE -->
+  <div class="section">
+    <h3>Task Details</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Assigned To</th>
+          <th>Priority</th>
+          <th>Deadline</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="taskTable"></tbody>
+    </table>
+  </div>
+
+  <!-- GANTT -->
+  <div class="section">
+    <h3>Gantt Timeline</h3>
+    <div class="gantt-container" id="ganttContainer"></div>
+  </div>
+
+</main>
+
+<script src="js/gantt.js"></script>
+<script src="./js/notificationWatcher.js"></script>
+</body>
+</html>

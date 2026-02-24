@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Assign Task | Aakruthi 3D</title>
+  <link rel="stylesheet" href="css/assign-task.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar">
+    <div class="brand">
+      <img src="assets/logo.png" alt="Aakruthi 3D Logo" />
+      <span>Aakruthi 3D Pvt Ltd</span>
+    </div>
+
+    <nav>
+      <div class="navbar" id="navbar">
+  <a href="dashboard.html">Dashboard</a>
+  <a href="assign-task.html" id="nav-assign">Assign Task</a>
+  <a href="gantt.html">Gantt</a>
+  <a href="reports.html">Reports</a>
+  <a href="notification.html" style="position:relative;">
+  🔔
+  <span id="notifCount"
+        style="
+          background:red;
+          color:white;
+          font-size:11px;
+          padding:2px 6px;
+          border-radius:50%;
+          position:absolute;
+          top:-5px;
+          right:-10px;
+          display:none;">
+  </span>
+</a>
+
+  <a href="#" onclick="logout()">Logout</a>
+</div>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    <h2>Assign New Task</h2>
+
+    <form id="taskForm">
+      <label>Title</label>
+      <input type="text" id="title" required />
+
+      <label>Description</label>
+      <textarea id="description" rows="4" required></textarea>
+
+      <label>Priority</label>
+      <select id="priority" required>
+        <option value="">Select</option>
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+      </select>
+
+      <label>Deadline</label>
+      <input type="date" id="deadline" required />
+
+      <label>Assign To</label>
+      <select id="assignedTo" required></select>
+
+      <label>Report To</label>
+      <select id="reportTo" required></select>
+
+      <label>Attachment (file name / link)</label>
+      <input type="text" id="attachment" placeholder="Optional" />
+
+      <button type="submit">Assign Task</button>
+    </form>
+  </main>
+
+  <script src="js/assign-task.js"></script>
+  
+</body>
+</html>

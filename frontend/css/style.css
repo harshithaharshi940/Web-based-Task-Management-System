@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+/* Header */
+.header {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.header img {
+  height: 45px;
+  margin-right: 15px;
+}
+
+.header h1 {
+  font-size: 20px;
+  color: #000;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0b0f4a;
+  padding: 10px 40px;
+}
+
+.navbar a {
+  color: #fff;
+  margin-right: 25px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Page container */
+.container {
+  padding: 30px 40px;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.dashboard-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.dashboard-card {
+  width: 50%;
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.task-table th,
+.task-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.task-table th {
+  background-color: #0b0f4a;
+  color: white;
+}
+
+.task-table button {
+  padding: 6px 12px;
+  background: #0b0f4a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.task-table button.danger {
+  background: #b30000;
+}

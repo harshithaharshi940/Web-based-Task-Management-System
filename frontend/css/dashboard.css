@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+}
+
+.navbar {
+  background: #0b0f4a;
+  color: white;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand img {
+  height: 35px;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.navbar a.active {
+  border-bottom: 2px solid white;
+}
+
+.container {
+  padding: 20px 30px;
+}
+
+.dashboard-row {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  width: 50%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+select {
+  padding: 4px;
+}
+
+button {
+  padding: 5px 10px;
+  background: #c0392b;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
